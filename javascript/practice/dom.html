@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+   
+    
+</head>
+<body>
+    
+    <h1 id="head">hello</h1>
+    <h3 >hii</h3>
+    <h3 >bye</h3>
+    <p class="sub">namste</p>
+    <p class="sub">bye!</p>
+    <img src="" id="image" alt="pic">
+    <!-- <button onclick="document.getElementById('head').style.textAlign='center'">click</button> -->
+    <button>click</button>
+    <script>
+        
+        const a=document.getElementById("head")
+        // alert(a)
+        a.innerHTML="welcome!"
+        a.style.color="blue"
+        const b=document.getElementsByClassName("sub")
+        // alert(b)
+        //   alert(b[0])
+        b[0].innerHTML="empty"
+        b[0].setAttribute(
+            "style",
+            "color:red;background-color:blue;text-align:center;font-size:20px"
+        
+        )
+
+
+        // const change=()=> {
+        //        a.style.textAlign='center'
+        //     }
+          const c=document.getElementsByTagName("h3")
+        //   alert(c)
+        //   alert(c[0])
+        c[1].style.fontSize="30px"
+        
+       const d= document.getElementById("image")
+       d.src = "https://media.istockphoto.com/id/1459941554/photo/global-communication-network-concept-digital-transformation.webp?b=1&s=170667a&w=0&k=20&c=QxUtk9FlLei3e5un_qEvj9pG3F14qVDhfxyKDk9zLLo="
+       d.alt="picture"
+       
+    //    document.write("javascript")
+    const btn=document.getElementsByTagName("button")
+    // btn.onClick=function(){
+    //     document.getElementById("head").style.border="3px solid lightgrey"
+    // }
+
+    btn.addEventListener('click',()=>{
+        a.style.backgroundColor=" grey"
+    })
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

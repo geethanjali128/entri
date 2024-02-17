@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <input type="text" id="input">
+
+    <script>
+        const inputField=document.getElementById("input")
+        inputField.addEventListener('focus',()=>{
+            inputField.setAttribute(
+                "style",
+                "width:400px;height:30px;font-size:20px"
+            )
+        })
+        inputField.addEventListener('blur',()=>{
+             inputField.setAttribute(
+                "style",
+                "background-color:brown;"
+            )
+        })
+    </script>
+</body>
+</html>
