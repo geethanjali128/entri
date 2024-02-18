@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+
+<body>
+    <form id="field">
+        <input type="text"><br/>
+        <input type="reset"><br />
+        <input type="submit">
+    </form>
+    <img src="https://media.istockphoto.com/id/1459941554/photo/global-communication-network-concept-digital-transformation.webp?b=1&s=170667a&w=0&k=20&c=QxUtk9FlLei3e5un_qEvj9pG3F14qVDhfxyKDk9zLLo=" alt="pic" id="picture" onload="load()" onerror="error()">
+
+    <script>
+        const form = document.getElementById("field")
+      form.onsubmit=change
+       form.onreset = change1
+      function change(){
+        alert("submitted scuccessfully")
+      }
+      function change1() {
+            alert("are you sure to delete this form")
+        }
+
+     
+      function load(){
+        alert("load success")
+      }
+      function error(){
+        alert("error")
+      }
+
+    </script>
+</body>
+
+</html>
